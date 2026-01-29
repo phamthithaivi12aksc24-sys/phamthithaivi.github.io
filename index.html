@@ -2,10 +2,80 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Website của Vi</title>
+  <title>Shop của Vi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #ff6f91;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      color: red;
+      font-weight: bold;
+    }
+    button {
+      background: #ff6f91;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #ddd;
+    }
+  </style>
 </head>
 <body>
-  <h1>Xin chào 👋</h1>
-  <p>Đây là website đầu tiên của Vi trên GitHub Pages 💙</p>
+
+<header>
+  <h1>Shop của Vi 💕</h1>
+  <p>Bán hàng online đơn giản</p>
+</header>
+
+<div class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/200" alt="Sản phẩm 1">
+    <h3>Sản phẩm 1</h3>
+    <p class="price">100.000đ</p>
+    <button>Mua ngay</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200" alt="Sản phẩm 2">
+    <h3>Sản phẩm 2</h3>
+    <p class="price">200.000đ</p>
+    <button>Mua ngay</button>
+  </div>
+</div>
+
+<footer>
+  📞 Liên hệ: 0123 456 789
+</footer>
+
 </body>
 </html>
